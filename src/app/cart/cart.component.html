@@ -1,0 +1,10 @@
+<h3>Cart</h3>
+
+<fieldset>
+  <input type="text" [(ngModel)]="newItem" />
+  <input type="text" [(ngModel)]="newDescription" />
+  <input type="url" [(ngModel)]="newUrl" />
+  <button (click)="addItem()">Post</button>
+</fieldset>
+
+<app-product-list></app-product-list>

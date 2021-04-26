@@ -1,0 +1,17 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <label>
+    <input
+      type="text"
+      [(ngModel)]="product.description"
+      onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';"
+    />
+  </label>
+
+
+    <button (click)="updateItem()">Save</button>
+
+</div>
